@@ -9,14 +9,13 @@ Note that all Ansible playbooks, roles, and group\_vars are stored under a commo
 
 Before experimenting locally, you must have the following items installed and working:
 
-* [VirtualBox](https://www.virtualbox.org/) >= v4.3.12
-* [Vagrant](http://vagrantup.com/) = v1.6.5
-* [Ansible](http://docs.ansible.com/intro_installation.html) >= v1.6.x
-
+* [VirtualBox](https://www.virtualbox.org/) >= v5.0.12
+* [Vagrant](http://vagrantup.com/) = v1.8.1
+* [Ansible](http://docs.ansible.com/intro_installation.html) = v1.9.2
 
 If you're using a Mac, it's easiest to just: [`brew install ansible`](http://brew.sh)
 
-Note: The version of Vagrant is important. There may be issues with a different version, but you are welcome to use whichever version tickles you...
+Note: The version of Vagrant is important. There may be issues with a different version, but you are welcome to use whichever version tickles you... Project not yet tested with ansible v2, but should work with a range of ansible versions.
 
 ## Troubleshooting
 
