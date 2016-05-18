@@ -20,6 +20,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     euler.vm.box = 'trusty'
     euler.vm.box_url = BOX_SOURCE + BOX_TYPE
     euler.vm.network "private_network", ip: IP_ADDRESS[:euler_dev]
+    euler.vm.hostname = "euler-dev"
 
     # use all available cpu cores
     host = RbConfig::CONFIG['host_os']
