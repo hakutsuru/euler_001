@@ -11,7 +11,8 @@ After working through the first problem though, you should realize that you are 
 
 So let's not discourage anyone from hacking. But Project Euler wants us to share solutions only on their site, to discourage *cheaters* and enhance community discussion -- to this, I must chortle *nope*.
 
-I will not be promoting this repo, and it is not expected to be impress anyone.
+I will not be promoting this repo, and it is not expected to impress anyone.
+
 
 Project Euler — Problem 1
 --------------------------------------
@@ -43,6 +44,10 @@ Project Euler — Logistics
 -------------------------------------
 
 Most solutions use interpreted languages and contain helpful (if minimal) comments, but I do include compiled languages.
+
+For simplicity, each Project Euler problem will have its own environment. Solutions files are expected to be named uniquely, so it should be easy to start with any *euler* repo, and experiment with code from other problems in the series.
+
+So I will not be configuring solution environments to run simultaneously, until there is a compelling reason.
 
 Naturally, solutions are meant to run under unbutu, but... There will be exceptions.
 
