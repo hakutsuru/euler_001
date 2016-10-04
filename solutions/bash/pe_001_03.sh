@@ -6,7 +6,6 @@
 
 
 THRESHOLD=$1
-COUNTER=0
 result=0
 
 function summation_to_number()

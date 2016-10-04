@@ -6,7 +6,6 @@
 
 
 THRESHOLD=$1
-COUNTER=0
 result=0
 
 for (( i=1; i<=$THRESHOLD; i+=1 )); do
