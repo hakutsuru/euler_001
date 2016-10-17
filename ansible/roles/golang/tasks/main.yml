@@ -1,0 +1,43 @@
+---
+
+# 'go run file.go' and 'go build file.go' work
+# but 'go install ...' requires setting GOBIN
+#
+# why v1.5? considering "The Go Programming Language"
+
+- name: download the go archive
+  sudo: true
+  get_url:
+    url=https://storage.googleapis.com/golang/go1.5.1.linux-amd64.tar.gz
+    dest=/tmp/go1.5.1.linux-amd64.tar.gz
+    owner=root
+    group=root
+    mode=0644
+
+- name: extract the go binaries
+  sudo: true
+  unarchive:
+    src=/tmp/go1.5.1.linux-amd64.tar.gz
+    dest=/opt
+    copy=no
+
+- name: add GOROOT env variable
+  sudo: true
+  lineinfile:
+    dest=/etc/profile
+    insertafter=EOF
+    line='export GOROOT=/opt/go'
+
+- name: add go to PATH
+  sudo: true
+  lineinfile:
+    dest=/etc/profile
+    insertafter=EOF
+    line='export PATH=$PATH:$GOROOT/bin'
+
+- name: add GOPATH env variable
+  sudo: true
+  lineinfile:
+    dest=/etc/profile
+    insertafter=EOF
+    line='export GOPATH=/opt/euler/go'

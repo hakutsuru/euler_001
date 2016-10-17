@@ -18,6 +18,7 @@
     - clojure
     - scala
     - python3
+    - golang
     - erlang
     - elixir
     - swift
